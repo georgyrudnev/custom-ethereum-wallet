@@ -10,6 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "ethereumjs-wallet": "^1.0.2",
     "web3": "^4.3.0"
   }

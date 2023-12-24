@@ -1,7 +1,7 @@
 // Ensure you include the web3 library in your project
 
 // Connect to Ethereum node (Replace with your own node URL)
-const nodeUrl = 'https://sepolia.infura.io/v3/209800a15ce24cf6a44e251ea915b9b4';
+const nodeUrl = process.env.ETHEREUM_NODE_URL || 'https://sepolia.infura.io/v3/209800a15ce24cf6a44e251ea915b9b4';
 const web3 = new Web3(new Web3.providers.HttpProvider(nodeUrl));
 
 // Placeholder for the user's wallet address
