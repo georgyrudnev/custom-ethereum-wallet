@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethereum Wallet</title>
+</head>
+<body>
+    <h1>Ethereum Wallet ChatGPT</h1>
+
+    <div>
+        <h2>Balance: <span id="balance"></span> ETH</h2>
+        <button onclick="getBalance()">Show Balance</button>
+    </div>
+
+    <div>
+        <h2>Send Transaction</h2>
+        <label for="to">To:</label>
+        <input type="text" id="to" placeholder="Recipient address">
+        <label for="amount">Amount:</label>
+        <input type="text" id="amount" placeholder="Amount in ETH">
+        <button onclick="sendTransaction()">Send Transaction</button>
+    </div>
+
+    <div>
+        <h2>Receive</h2>
+        <p>Your Address: <span id="walletAddress"></span></p>
+    </div>
+
+    <div>
+        <h2>Import Keys</h2>
+        <label for="privateKey">Private Key:</label>
+        <input type="text" id="privateKey" placeholder="Enter private key">
+        <button onclick="importKeys()">Import Keys</button>
+    </div>
+
+    <div>
+        <h2>Own Execution Node</h2>
+        <label for="nodeUrl">Node URL:</label>
+        <input type="text" id="nodeUrl" placeholder="Enter node URL">
+        <button onclick="integrateNode()">Integrate Node</button>
+    </div>
+
+    <script src="web3.js"></script>
+    <script src="walletApp.js"></script>
+</body>
+</html>
